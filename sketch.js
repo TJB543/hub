@@ -10,15 +10,15 @@ function setup() {
 }
 
 function BYB_URL() {
-    window.open("https://tjb543.github.io/Bring-Your-Brolly/")
+    window.location.replace("https://tjb543.github.io/Bring-Your-Brolly/")
 }
 
 function FLAVO_URL() {
-    window.open("https://lsiret.github.io/Flavoball/");
+    window.location.relace("https://lsiret.github.io/Flavoball/");
 }
 
 function SW_URL(){
-    window.open("https://tjb543.github.io/stick-war/")
+    window.location.replace("https://tjb543.github.io/stick-war/")
 }
 
 function draw() {

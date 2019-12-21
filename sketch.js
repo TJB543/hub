@@ -1,7 +1,7 @@
 function setup() {
     createCanvas(windowWidth,windowHeight);
     Bring_Your_Brolly = createImg("BYB.png");
-    Bring_Your_Brolly.size(10,10);
+    Bring_Your_Brolly.size(1,1);
     Bring_Your_Brolly.position(width/4-Bring_Your_Brolly.width/2,height/4);
     Flavoball = createButton("Flavoball");
     Flavoball.position(width/4*3-Flavoball.width/2,height/4);

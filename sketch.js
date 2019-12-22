@@ -14,7 +14,7 @@ function BYB_URL() {
 }
 
 function FLAVO_URL() {
-    window.location.relace("https://lsiret.github.io/Flavoball/");
+    window.location.replace("https://lsiret.github.io/Flavoball/");
 }
 
 function SW_URL(){

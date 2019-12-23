@@ -11,17 +11,17 @@ function setup() {
 }
 
 function BYB_URL() {
-  window.location.replace("https://tjb543.github.io/Bring-Your-Brolly/")
+  window.location.assign("https://tjb543.github.io/Bring-Your-Brolly/")
   load = 1;
 }
 
 function FLAVO_URL() {
-  window.location.replace("https://lsiret.github.io/Flavoball/");
+  window.location.assign("https://lsiret.github.io/Flavoball/");
   load = 2;
 }
 
 function SW_URL() {
-  window.location.replace("https://tjb543.github.io/stick-war/")
+  window.location.assign("https://tjb543.github.io/stick-war/")
   load = 3;
 }
 

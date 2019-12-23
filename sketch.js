@@ -49,3 +49,7 @@ function draw() {
     Stick_war.center();
   }
 }
+
+function windowResized (){
+    resizeCanvas (windowWidth, windowHeight);
+}

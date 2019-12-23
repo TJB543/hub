@@ -4,7 +4,7 @@ function setup() {
   Bring_Your_Brolly = createImg("BYB.png");
   Bring_Your_Brolly.size(50, 50);
   Bring_Your_Brolly.position(width / 4 - Bring_Your_Brolly.width / 2, height / 4 - Bring_Your_Brolly.width / 2);
-  Flavoball = createButton("Flavoball");
+  Flavoball = createImg("FBlogo.png");
   Flavoball.position(width / 4 * 3 - Flavoball.width / 2, height / 4);
   Stick_war = createButton("Pre-release: Stick war")
   Stick_war.position(width / 2 - Stick_war.width / 2, height / 2)

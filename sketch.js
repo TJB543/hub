@@ -53,8 +53,10 @@ function setup() {
   Flavoball = createImg("FBlogo.png");
   Flavoball.size(50,50);
   Flavoball.position(width / 4 * 3 - Flavoball.width / 2, height / 4 - Flavoball.height / 2);
-  Stick_war = createButton("Pre-release: Stick war")
-  Stick_war.position(width / 2 - Stick_war.width / 2, height / 2);
+  Stick_war = createSelect()
+  Stick_war.position(width / 2 - Stick_war.width / 2, height / 2)
+  Stick_war.option("Pre-releases:");
+  Stick_war.option("Stick war");
   
   for (let i = 0; i < (width+height)/1.5; i++) {
     stars[i] = new Star();
@@ -72,7 +74,10 @@ function FLAVO_URL() {
 }
 
 function SW_URL() {
-  window.location.assign("https://tjb543.github.io/stick-war/")
+  let item = Stick_war.value();
+  item = item.toLowerCase();
+  item = item.replace(/\s/g,"-");
+  window.location.replace("https://tjb543.github.io/"+item+"/")
   load = 3;
 }
 
@@ -84,7 +89,7 @@ function draw() {
     text("Please choose a game from below!", width / 2, height / 8 + 20)
     Bring_Your_Brolly.mousePressed(BYB_URL);
     Flavoball.mousePressed(FLAVO_URL);
-    Stick_war.mousePressed(SW_URL)
+    Stick_war.changed(SW_URL)
   }else{
   speed = -50;
   background(51);

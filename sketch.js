@@ -53,10 +53,10 @@ function setup() {
   Flavoball = createImg("FBlogo.png");
   Flavoball.size(50,50);
   Flavoball.position(width / 4 * 3 - Flavoball.width / 2, height / 4 - Flavoball.height / 2);
-  Stick_war = createSelect()
-  Stick_war.position(width / 2 - Stick_war.width / 2, height / 2)
-  Stick_war.option("Pre-releases:");
-  Stick_war.option("Stick war");
+  pre_releases = createSelect()
+  pre_releases.option("Pre-releases:");
+  pre_releases.option("Stick war");
+  pre_releases.position(width / 2 - Stick_war.width / 2, height / 2)
   
   for (let i = 0; i < (width+height)/1.5; i++) {
     stars[i] = new Star();
@@ -74,7 +74,7 @@ function FLAVO_URL() {
 }
 
 function PR_URL() {
-  let item = Stick_war.value();
+  let item = pre_releases.value();
   item = item.toLowerCase();
   item = item.replace(/\s/g,"-");
   if(item === "stick-war" || item === "repo-started-by-tjb543" || item === "repo-started-by-tjb543"){
@@ -91,7 +91,7 @@ function draw() {
     text("Please choose a game from below!", width / 2, height / 8 + 20)
     Bring_Your_Brolly.mousePressed(BYB_URL);
     Flavoball.mousePressed(FLAVO_URL);
-    Stick_war.changed(PR_URL)
+    pre_releases.changed(PR_URL)
   }else{
   speed = -50;
   background(51);
@@ -105,15 +105,15 @@ function draw() {
   if (load == 1) {
     Bring_Your_Brolly.center()
     Flavoball.remove();
-    Stick_war.remove();
+    pre_releases.remove();
   } else if (load == 2) {
     Bring_Your_Brolly.remove()
     Flavoball.center();
-    Stick_war.remove();
+    pre_releases.remove();
   } else if (load == 3) {
     Bring_Your_Brolly.remove()
     Flavoball.remove();
-    Stick_war.center();
+    pre_releases.center();
   }
   }
 }
@@ -122,5 +122,5 @@ function windowResized (){
     resizeCanvas (windowWidth, windowHeight);
     Bring_Your_Brolly.position(width / 4 - Bring_Your_Brolly.width / 2, height / 4 - Bring_Your_Brolly.height / 2);
     Flavoball.position(width / 4 * 3 - Flavoball.width / 2, height / 4 - Flavoball.height / 2);
-    Stick_war.position(width / 2 - Stick_war.width / 2, height / 2);
+    pre_releases.position(width / 2 - Stick_war.width / 2, height / 2);
 }

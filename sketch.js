@@ -103,7 +103,7 @@ function draw() {
     stars[i].update();
     stars[i].show();
   }
-    stroke(255);
+    stroke(0);
     text("Traveling to...",width/2,height/4);
   if (load == 1) {
     Bring_Your_Brolly.center()

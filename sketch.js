@@ -44,19 +44,22 @@ let stars = [];
 
 let speed;
 
+function preload() {
+  Bring_Your_Brolly = createImg("BYB.png");
+  Flavoball = createImg("FBlogo.png");
+}
+
 function setup() {
   load = 0;
   createCanvas(windowWidth, windowHeight);
-  Bring_Your_Brolly = createImg("BYB.png");
   Bring_Your_Brolly.size(50, 50);
   Bring_Your_Brolly.position(width / 4 - Bring_Your_Brolly.width / 2, height / 4 - Bring_Your_Brolly.height / 2);
-  Flavoball = createImg("FBlogo.png");
-  Flavoball.size(50,50);
+   Flavoball.size(50,50);
   Flavoball.position(width / 4 * 3 - Flavoball.width / 2, height / 4 - Flavoball.height / 2);
   pre_releases = createSelect()
   pre_releases.option("Pre-releases:");
   pre_releases.option("Stick war");
-  pre_releases.center();
+  pre_releases.center()
   
   for (let i = 0; i < (width+height)/1.5; i++) {
     stars[i] = new Star();

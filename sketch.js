@@ -73,11 +73,13 @@ function FLAVO_URL() {
   load = 2;
 }
 
-function SW_URL() {
+function PR_URL() {
   let item = Stick_war.value();
   item = item.toLowerCase();
   item = item.replace(/\s/g,"-");
+  if(item === "stick-war" || item === "repo-started-by-tjb543" || item === "repo-started-by-tjb543"){
   window.location.replace("https://tjb543.github.io/"+item+"/")
+}
   load = 3;
 }
 

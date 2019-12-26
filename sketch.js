@@ -56,7 +56,7 @@ function setup() {
   pre_releases = createSelect()
   pre_releases.option("Pre-releases:");
   pre_releases.option("Stick war");
-  pre_releases.position(width / 2 - Stick_war.width / 2, height / 2)
+  pre_releases.center();
   
   for (let i = 0; i < (width+height)/1.5; i++) {
     stars[i] = new Star();
@@ -122,5 +122,5 @@ function windowResized (){
     resizeCanvas (windowWidth, windowHeight);
     Bring_Your_Brolly.position(width / 4 - Bring_Your_Brolly.width / 2, height / 4 - Bring_Your_Brolly.height / 2);
     Flavoball.position(width / 4 * 3 - Flavoball.width / 2, height / 4 - Flavoball.height / 2);
-    pre_releases.position(width / 2 - Stick_war.width / 2, height / 2);
+    pre_releases.center();
 }

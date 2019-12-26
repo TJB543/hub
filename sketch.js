@@ -91,7 +91,7 @@ function draw() {
     text("Please choose a game from below!", width / 2, height / 8 + 20)
     Bring_Your_Brolly.mousePressed(BYB_URL);
     Flavoball.mousePressed(FLAVO_URL);
-    Stick_war.changed(SW_URL)
+    Stick_war.changed(PR_URL)
   }else{
   speed = -50;
   background(51);

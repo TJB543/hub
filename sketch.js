@@ -46,7 +46,7 @@ let speed;
 
 function preload() {
   Bring_Your_Brolly = createImg("BYB.png");
-  Flavoball = createImg("FBlogo.png");
+  Flavoball = createImg("FBlogo-New.png");
 }
 
 function setup() {
